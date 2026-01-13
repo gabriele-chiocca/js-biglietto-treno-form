@@ -22,35 +22,42 @@
   </head>
   <body>
     <div class="bg-primary">
+      <h1 class="text-center text-light">
+        CALCOLA IL PREZZO DEL TUO BIGLIETTO
+      </h1>
       <form>
         <div class="container">
           <div class="row">
             <div class="form-group col-4 text-light">
-              <label for="exampleFormControlInput1">Email address</label>
+              <label for="exampleFormControlInput1">Nome Cognome</label>
               <input
-                type="email"
+                type="text"
                 class="form-control"
-                id="exampleFormControlInput1"
-                placeholder="name@example.com"
+                id="nomecognome"
+                placeholder="Inserisci nome e cognome"
               />
             </div>
             <div class="form-group col-4 text-light">
-              <label for="exampleFormControlInput1">Email address</label>
+              <label for="exampleFormControlInput1">Km da percorrere</label>
               <input
-                type="email"
+                type="text"
                 class="form-control"
                 id="exampleFormControlInput1"
-                placeholder="name@example.com"
+                placeholder="Inserisci Km"
               />
             </div>
             <div class="form-group col-4 text-light">
-              <label for="exampleFormControlInput1">Email address</label>
-              <input
-                type="email"
-                class="form-control"
-                id="exampleFormControlInput1"
-                placeholder="name@example.com"
-              />
+              <label for="exampleFormControlSelect1">Example select</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>Maggiorenne</option>
+                <option>Minorenne</option>
+              </select>
+            </div>
+
+            <div class="col-12 text-center gy-4">
+              <button type="button" class="btn btn-success">Genera</button>
+              <button type="button" class="btn btn-danger">Annulla</button>
+              <div class="mb-4"></div>
             </div>
           </div>
         </div>
