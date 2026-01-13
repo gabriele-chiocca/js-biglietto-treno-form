@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <div class="bg-primary">
+    <div class="bg-primary py-4">
       <h1 class="text-center text-light">
         CALCOLA IL PREZZO DEL TUO BIGLIETTO
       </h1>
@@ -65,8 +65,9 @@
         </div>
       </form>
 
+      <!--
       <h2 class="text-light text-center">IL TUO BIGLIETTO</h2>
-      <div class="container bg-light rounded-2 mb-3">
+      <div class="container bg-light rounded-2">
         <div class="row">
           <div class="col">
             <h2 class="fs-3">DETTAGLIO PASSEGGERI</h2>
@@ -75,13 +76,64 @@
               <p class="fs-4">Jon Snow</p>
             </div>
           </div>
-          <div class="col"></div>
-          <div class="col"></div>
-          <div class="col"></div>
-          <div class="col"></div>
+          <div class="col">
+            <h3>Offerta</h3>
+            <p>Biglietto standard</p>
+          </div>
+          <div class="col">
+            <h3>Offerta</h3>
+            <p>Biglietto standard</p>
+          </div>
+          <div class="col">
+            <h3>Offerta</h3>
+            <p>Biglietto standard</p>
+          </div>
+          <div class="col">
+            <h3>Offerta</h3>
+            <p>Biglietto standard</p>
+          </div>
         </div>
       </div>
     </div>
+-->
+
+      <h2 class="text-light text-center">IL TUO BIGLIETTO</h2>
+
+<div class="container bg-light rounded-2 p-3">
+  <div class="row">
+    <div class="col-12">
+      <h2 class="fs-3">DETTAGLIO PASSEGGERI</h2>
+    </div>
+  </div>
+
+  <div class="row g-0">
+    <!-- sinistra -->
+    <div class="col-3">
+      <div class="bg-secondary p-3 ">
+        <h3 class="fs-4 mb-1">NOME PASSEGGERO</h3>
+        <p class="fs-5 mb-0">Jon Snow</p>
+      </div>
+    </div>
+
+    <!-- destra -->
+    <div class="col-9 gx-4">
+      <div class="row g-0 border-bottom py-2 fw-bold">
+        <div class="col">Offerta</div>
+        <div class="col">Carrozza</div>
+        <div class="col">Codice CP</div>
+        <div class="col">Costo biglietto</div>
+      </div>
+
+      <div class="row g-0 py-2">
+        <div class="col">Biglietto standard</div>
+        <div class="col">5</div>
+        <div class="col">92911</div>
+        <div class="col">2.10€</div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
     <script src="./js/script.js"></script>
   </body>
