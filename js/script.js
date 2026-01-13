@@ -36,7 +36,7 @@ priceForm.addEventListener('submit', (event) => {
 
   let outputPrezzo;
 
-  if (etàSelected == 'Maggiorenne') {
+  if (etàSelected == 'Over 65') {
     ticketPreviewContainer.classList.remove('d-none');
 
     const priceTicket = kilometriCompiled * priceForKm;
@@ -50,6 +50,14 @@ priceForm.addEventListener('submit', (event) => {
     const priceTicket = kilometriCompiled * priceForKm;
 
     outputPrezzo = priceTicket - priceTicket * 0.2;
+
+    pricePreview.innerText = outputPrezzo.toFixed(2);
+  } else if (etàSelected == 'Maggiorenne') {
+    ticketPreviewContainer.classList.remove('d-none');
+
+    const priceTicket = kilometriCompiled * priceForKm;
+
+    outputPrezzo = priceTicket;
 
     pricePreview.innerText = outputPrezzo.toFixed(2);
   } else {
